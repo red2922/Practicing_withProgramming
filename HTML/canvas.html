@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+
+<html lang="en-US">
+    <a href="index.html">HOME</a>
+    <br><a href="page_2.html">Page 2</a>
+    <br><a href="canvas.html">Canvas Page</a>
+
+    <head>
+        <link rel="icon" type="image/png" href="Assets/BoochiSmol.png">
+        <meta charset="utf-8">
+        <link rel="icon" type="image/png" href="Assets/BoochiSmol.png">
+        <title>My Canvas Webpage</title>
+    </head>
+
+    <body>
+        <canvas id="first_canvas"
+        width="700px"
+        height="500px"
+        style="border: 2px solid #000000; background-color: #000000;">
+        </canvas>
+        
+        <script>
+            let g = document.getElementById("first_canvas"); 
+            let geeks = g.getContext("2d"); 
+            let gradient = geeks.createLinearGradient(1, 4, g.width, 2); 
+            gradient.addColorStop("0", "green"); 
+            gradient.addColorStop("0.4", "yellow"); 
+            gradient.addColorStop("1.0", "aqua"); 
+            geeks.font = "40px sans-serif"; 
+            geeks.fillStyle = "red"; 
+            geeks.strokeStyle = gradient; 
+            geeks.strokeText("GeeksforGeeks", 10, 60); 
+        </script>
+
+
+    </body>
+</html>
