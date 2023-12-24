@@ -9,6 +9,6 @@ December 23 - Present --- Learning Javascript Basics + Reinforcing Datastructure
 
     December 23rd - December 24th - Completed Learn Basic JavaScript by Building a Role Playing Game  
     Home Page of RPG Game: 
-    ![Home Page of App](https://github.com/red2922/Practicing_withProgramming/assets/117611195/5397df0c-611f-4de1-916e-68f002be8d6c)
+   ![Home Page of App](https://github.com/red2922/Practicing_withProgramming/assets/117611195/5397df0c-611f-4de1-916e-68f002be8d6c)
     Fighting Slime Page of RPG Game: 
-    ![Funny Image of App](https://github.com/red2922/Practicing_withProgramming/assets/117611195/a45b6499-e0f2-4550-91d2-ec39019eb3b5)
+   ![Funny Image of App](https://github.com/red2922/Practicing_withProgramming/assets/117611195/a45b6499-e0f2-4550-91d2-ec39019eb3b5)
