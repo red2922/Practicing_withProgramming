@@ -18,6 +18,8 @@ const monsterStats = document.querySelector("#monsterStats");
 const monsterName = document.querySelector("#monsterName");
 const monsterHealthText = document.querySelector("#monsterHealth");
 
+const areaImage = document.querySelector("#photo");
+
 const weapons = [
     {name:"stick",
     power:5},
@@ -104,14 +106,17 @@ button3.onclick = fightDragon;
 //Buttons Functions
 function goTown(){
     update(locations[0]);
+    areaImage.src="Assets/TownSquare.jpg";
 }
 
 function goStore(){
     update(locations[1]);
+    areaImage.src="Assets/shop.webp";
 }
 
 function goCave(){
     update(locations[2]);
+    areaImage.src="Assets/SlimeandDog.png";
 }
 
 
@@ -183,16 +188,19 @@ function goFight(){
 }
 
 function fightBeast(){
+    areaImage.src="Assets/wolf.png";
     fighting = 1;
     goFight();
 }
 
 function fightDragon(){
+    areaImage.src="Assets/DragonCave.jpg";
     fighting = 2;
     goFight();
 }
 
 function fightSlime(){
+    areaImage.src="Assets/slime.jpg";
     fighting = 0;
     goFight();
 }
@@ -212,15 +220,16 @@ function attack(){
         text.innerText += " You miss.";
     }
     
-    healthText.innerText = health;
-    monsterHealthText.innerText = monsterHealth;
-
     if(health <= 0){
         lose();
+
     } else if (monsterHealth <= 0){
         defeatMonster();
         fighting === 2 ? winGame() : defeatMonster();
     }
+
+    healthText.innerText = health;
+    monsterHealthText.innerText = monsterHealth;
 
     if(Math.random() <= .1 && inventory.length !== 1){
         text.innerText += " Your " + inventory.pop() + " breaks.";
@@ -252,10 +261,10 @@ function winGame(){
     update(locations[6]);
 }
 
-
 function lose(){
-    update[locations[5]];
+    update(locations[5]);
 }
+
 
 function restart(){
     xp = 0;
@@ -270,6 +279,7 @@ function restart(){
 }
 
 function easterEgg(){
+    areaImage.src="Assets/Gamba.jpg";
     update(locations[7]);
 }
 
