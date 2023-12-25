@@ -17,6 +17,8 @@
   }
   
   h1 {
+    border: solid #FFFFFF;
+    display: inline;
     text-align: center;
   }
   
