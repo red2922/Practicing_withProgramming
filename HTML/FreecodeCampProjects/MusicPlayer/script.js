@@ -4,6 +4,15 @@ const pauseButton = document.getElementById("pause");
 const nextButton = document.getElementById("next");
 const previousButton = document.getElementById("previous");
 const shuffleButton = document.getElementById("shuffle");
+const audio = newAudio();
+
+let userData = {
+    songs:[...allSongs],
+    currentSong:null,
+    songCurrentTime:0
+};
+
+
 const allSongs = [
     {id: 0,
     title: "Scratching The Surface",
@@ -23,3 +32,7 @@ const allSongs = [
         duration: "3:51",
         src: "https://s3.amazonaws.com/org.freecodecamp.mp3-player-project/still-learning.mp3"}
 ];
+
+const renderSongs = (array) => {
+  
+}
