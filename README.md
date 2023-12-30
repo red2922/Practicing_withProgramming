@@ -18,4 +18,6 @@ December 23 - Present --- Learning Javascript Basics + Reinforcing Datastructure
    <h4>Image of Calorie Counter: </h4>
    <img src ="https://github.com/red2922/Practicing_withProgramming/assets/117611195/fda597c7-ae90-488e-a6c4-a248015c2f13" width="300" height="400">
 
-   <h3>December 25th - Present - Music Player </h3>
+   <h3>December 25th - 29th - Music Player </h3>
+   <h4>Image of Music Player: </h4>
+   <img src ="https://github.com/red2922/Practicing_withProgramming/assets/117611195/3898ea5a-ddd3-407c-8ef5-6833ba118169" width="300" height="400">
