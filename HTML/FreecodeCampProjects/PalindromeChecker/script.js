@@ -10,18 +10,18 @@ const isLengthOne = () =>{
 
 const isPalindrome = () =>{
     const word = textInput.value.toLowerCase();
-    const new_Word = [word.replace(/\W/g, '')];
+    const new_Word = word.replace(/[^0-9a-z]/gi, '');
     const back_Word = [];
 
 
     for(let i = 0; i <= new_Word.length; i++){
         back_Word.push(new_Word[new_Word.length - i]);
     }
-
+    back_Word.shift();
+    const stringBack_Word = back_Word.join("");
+    console.log(stringBack_Word);
     console.log(new_Word);
-    console.log(back_Word);
-
-    return new_Word == back_Word[1];
+    return new_Word == stringBack_Word;
 };
 
 
@@ -34,7 +34,7 @@ checkButton.addEventListener("click", () =>{
         if(isPalindrome()){
             output.textContent = `${textInput.value} is a Palindrome`;
         } else {
-            output.textContent = `${textInput.value} is not Palindrome`;
+            output.textContent = `${textInput.value} is not a Palindrome`;
         }
     }
 });
