@@ -21,3 +21,6 @@ December 23 - Present --- Learning Javascript Basics + Reinforcing Datastructure
    <h3>December 25th - 29th - Music Player </h3>
    <h4>Image of Music Player: </h4>
    <img src ="https://github.com/red2922/Practicing_withProgramming/assets/117611195/3898ea5a-ddd3-407c-8ef5-6833ba118169" width="300" height="400">
+
+   <h3>December 30th - 30th - Date Formatted</h3>
+   <h4>Completed a simple page that formated date</h4>
