@@ -3,12 +3,14 @@
 <html>
     <head>
         <link rel="stylesheet" href="styles.css">
+        <title>Palindrome Checker</title>
     </head>
     <body>
-        <input id="text-input">
 
+        <form>
+        <input id="text-input" type="text" required placeholder="Enter a Word" oninvalid="this.setCustomValidity('Please input a value')">
         <button id="check-btn"></button>
-
+        </form>
 
         <div id="result"></div>
 
