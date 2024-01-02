@@ -29,11 +29,11 @@ December 23 - Present --- Learning Javascript Basics + Reinforcing Datastructure
    <h4>Wireframing of Webpage via Figma</h4>
    <img src ="https://github.com/red2922/Practicing_withProgramming/assets/117611195/67f71a69-3975-47f0-93eb-f43fbafb4e80" width="650" height="350">
    
-   <h4>Actual Final Running Webpage</h4>
+   <h4>Actual Final Running Webpage With Racecar Input</h4>
    <img src ="https://github.com/red2922/Practicing_withProgramming/assets/117611195/b6f1e90d-1b92-4bf8-a370-3f19e92dcbe7" width="650" height="350">
 
    <h3>January 1st - 1st - Completed Football Team Cards Filter</h3>
-   <h4>Image of Football Team Cards: </h4>
+   <h4>Image of Football Team Cards filtered by NickName: </h4>
    <img src ="https://github.com/red2922/Practicing_withProgramming/assets/117611195/ed2937e5-a334-4206-9664-cf228abee92d" width="650" height="350">
 
 
