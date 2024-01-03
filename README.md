@@ -25,16 +25,27 @@ December 23 - Present --- Learning Javascript Basics + Reinforcing Datastructure
    <h3>December 30th - 30th - Date Formatted</h3>
    <h4>Completed a simple page that formated date</h4>
 
-   <h3>December 31st - 31st Completed Palindrome Webpage</h3>
+   <h3>December 31st Completed Palindrome Webpage</h3>
    <h4>Wireframing of Webpage via Figma</h4>
    <img src ="https://github.com/red2922/Practicing_withProgramming/assets/117611195/67f71a69-3975-47f0-93eb-f43fbafb4e80" width="650" height="350">
    
    <h4>Actual Final Running Webpage With Racecar Input</h4>
    <img src ="https://github.com/red2922/Practicing_withProgramming/assets/117611195/b6f1e90d-1b92-4bf8-a370-3f19e92dcbe7" width="650" height="350">
 
-   <h3>January 1st - 1st - Completed Football Team Cards Filter</h3>
+   <h3>January 1st - Completed Football Team Cards Filter</h3>
    <h4>Image of Football Team Cards filtered by NickName: </h4>
    <img src ="https://github.com/red2922/Practicing_withProgramming/assets/117611195/ed2937e5-a334-4206-9664-cf228abee92d" width="650" height="350">
+
+   <h3>January 2nd - Completed ToDo List using LocalStorage</h3>
+   <h4>Image of ToDo List with Single Entry </h4>
+   <img src ="https://github.com/red2922/Practicing_withProgramming/assets/117611195/fdff560b-3da3-4a95-ad3e-ad542f2eb251" width="270" height="350">
+
+
+
+
+   
+   
+   
 
 
 
