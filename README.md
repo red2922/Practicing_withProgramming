@@ -40,6 +40,11 @@ December 23 - Present --- Learning Javascript Basics + Reinforcing Datastructure
    <h4>Image of ToDo List with Single Entry </h4>
    <img src ="https://github.com/red2922/Practicing_withProgramming/assets/117611195/fdff560b-3da3-4a95-ad3e-ad542f2eb251" width="270" height="350">
 
+   <h3>January 3rd - 4th - Completed Decimal to Binary Recursion</h3>
+   <h4>Image of Webpage of Conversion of 255.0 to Binary</h4>
+   <img src ="https://github.com/red2922/Practicing_withProgramming/assets/117611195/3b1709ed-ee6f-446b-b1f2-94a4be1e9bab" width="650" height="350">
+   
+
 
 
 
