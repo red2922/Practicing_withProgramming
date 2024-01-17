@@ -12,6 +12,10 @@ const checkInput = () =>
     else if(number.value === "-1"){
         output.innerText = "Please enter a number greater than or equal to 1"
     }
+
+    else if(number.value >= 4000){
+        output.innerText = "Please enter a number less than or equal to 3999"
+    }
 };
 
 
