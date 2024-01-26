@@ -7,10 +7,22 @@ class basics {
             System.out.println(names[i]);
         }
 
-        System.out.println("Hello World!\n");
         Scanner myObj = new Scanner(System.in);
-        System.out.print("Please enter your name");
+        rps RockPaperScissors = new rps();
+
+        System.out.println("Hello World!\n");
+        System.out.print("Please enter your name: ");
         String userName = myObj.nextLine();
         System.out.println("Your name is: " + userName);
+        System.out.println("Please enter an rock, paper, or scissors");
+        String userInput = myObj.nextLine();
+
+        while (rps.checkInput(userInput) == false) {
+            System.out.println("Please enter a valid input");
+            userInput = myObj.nextLine();
+        }
+
+        System.out.println("You chose" + userInput);
+
     }
 }
