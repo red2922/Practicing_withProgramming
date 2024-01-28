@@ -1,8 +1,13 @@
 import java.util.Scanner;
 
 class basics {
+
     public static void main(String[] args) {
         boolean running = true;
+        int playerWins = 0;
+        int botWins = 0;
+        String win;
+
         String[] names = { "Rose", "Red", "Zero", "Lily", "Eclipse", "Candi", "Sno", "Violet" };
         for (int i = 0; i < names.length; i++) {
             System.out.println(names[i]);
@@ -26,8 +31,25 @@ class basics {
             }
 
             System.out.println("You chose " + userInput);
-            System.out.println("The bot is now choosing their hand");
-            System.out.println(RockPaperScissors.checkMoves(userInput, RockPaperScissors.randomChoice()) + " has won");
+            System.out.println("The bot is now choosing their hand \n");
+            String botInput = RockPaperScissors.randomChoice();
+            win = RockPaperScissors.checkMoves(userInput, botInput);
+
+            switch (win) {
+                case "bot":
+                    botWins++;
+                    break;
+                case "player":
+                    playerWins++;
+                    break;
+                case "draw":
+                    botWins++;
+                    playerWins++;
+                    break;
+            }
+
+            System.out.println(win + " has won");
+            System.out.println("Player Wins: " + playerWins + "\nBot Wins: " + botWins);
             System.out.println("Would you like to player again? \n Y/N\n");
             userInput = myObj.nextLine();
             userInput = userInput.toUpperCase();
@@ -39,4 +61,5 @@ class basics {
         }
 
     }
+
 }
