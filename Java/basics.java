@@ -24,6 +24,7 @@ class basics {
         while (running) {
             System.out.println("Please enter an rock, paper, or scissors");
             String userInput = myObj.nextLine();
+            userInput = userInput.toLowerCase();
 
             while (rps.checkInput(userInput) == false) {
                 System.out.println("Please enter a valid input");
@@ -49,8 +50,8 @@ class basics {
             }
 
             System.out.println(win + " has won");
-            System.out.println("Player Wins: " + playerWins + "\nBot Wins: " + botWins);
-            System.out.println("Would you like to player again? \n Y/N\n");
+            System.out.println("| Player Wins: " + playerWins + " |\n| Bot Wins: " + botWins + " |");
+            System.out.println("Would you like to player again? \nY/N\n");
             userInput = myObj.nextLine();
             userInput = userInput.toUpperCase();
             if (userInput.equals("Y")) {
