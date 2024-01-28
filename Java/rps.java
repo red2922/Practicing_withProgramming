@@ -5,12 +5,11 @@ public class rps {
         boolean isValid = false;
         int i = 0;
         while (isValid != true && i < moves.length) {
-            if (input == moves[i]) {
+            if (input.equals(moves[i])) {
                 isValid = true;
             }
 
             i++;
-            System.out.println(isValid);
         }
 
         return isValid;
