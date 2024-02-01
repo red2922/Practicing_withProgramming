@@ -1,11 +1,17 @@
 #container {
+  color: orange;
+  font-size: 25pt;
   position: absolute;
   background-color: aqua;
   height: 300px;
   width: 20%;
   border-radius: 100%;
   transform-origin: center;
-  animation: moveAround 2s infinite;
+  animation: moveAround 4s infinite;
+  text-align: center;
+  align-items: center;
+  display: grid;
+  border: solid black 12pt;
 }
 
 @keyframes moveAround {
