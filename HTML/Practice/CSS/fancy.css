@@ -1,9 +1,11 @@
 .root {
-  background-image:radial-gradient(circle,#92c8ff,#5fc0d1);
+  background-image:linear-gradient(to bottom,rgb(230, 249, 249),#92c8ff,#5fc0d1);
   display: grid;
   grid-template-rows: repeat(10, 10%);
   grid-template-columns: repeat(10, 10%);
   gap: 30px;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 .item-one {
@@ -12,7 +14,7 @@
   grid-area: 1 / 1 / 3 / 5;
   background: rgba(173, 216, 230,.7);
   justify-content: center;
-  box-shadow: 0 0 2px 3px rgba(173, 173, 255,.3);
+  box-shadow: 0 5px 2px 3px rgba(173, 173, 255,.3);
 }
 
 .item-two {
@@ -20,7 +22,7 @@
   border-radius: 3px;
   grid-area: 3 / 1 / 9 / 3;
   background: rgba(173, 216, 230,.7);
-  box-shadow: 0 0 2px 3px rgba(173, 173, 255,.3);
+  box-shadow: 0 5px 2px 3px rgba(173, 173, 255,.3);
 }
 
 .item-three {
@@ -28,7 +30,7 @@
   border-radius: 3px;
   grid-area: 3 / 3 / 9 / 5;
   background: rgba(173, 216, 230,.7);
-  box-shadow: 0 0 2px 3px rgba(173, 173, 255,.3);
+  box-shadow: 0 5px 2px 3px rgba(173, 173, 255,.3);
 }
 
 .item-four {
@@ -36,7 +38,7 @@
   border-radius: 3px;
   grid-area: 1 / 5 / 9 / 9;
   background: rgba(173, 216, 230,.7);
-  box-shadow: 0 0 2px 3px rgba(173, 173, 255,.3);
+  box-shadow: 0 5px 2px 3px rgba(173, 173, 255,.3);
 }
 
 .item-five {
@@ -44,7 +46,7 @@
   border-radius: 3px;
   grid-area: 9 / 1 / 11 / 5;
   background: rgba(173, 216, 230,.7);
-  box-shadow: 0 0 2px 3px rgba(173, 173, 255,.3);
+  box-shadow: 0 5px 2px 3px rgba(173, 173, 255,.3);
 }
 
 .item-six {
@@ -52,5 +54,5 @@
   border-radius: 3px;
   grid-area: 9 / 5 / 11 / 9;
   background: rgba(173, 216, 230,.7);
-  box-shadow: 0 0 2px 3px rgba(173, 173, 255,.3);
+  box-shadow: 0 5px 2px 3px rgba(173, 173, 255,.3);
 }
