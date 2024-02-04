@@ -1,80 +1,94 @@
 <!DOCTYPE html>
 
-
 <html lang="en-US">
-    <a href="index.html">HOME</a>
-    <br><a href="page_2.html">Page 2</a>
-    <br><a href="canvas.html">Canvas Page</a>
-    <br><a href="input.html">Input Page</a>
-    <br><a href="final.html">Final Page</a>
+  <a href="index.html">HOME</a>
+  <br /><a href="page_2.html">Page 2</a>
+  <br /><a href="canvas.html">Canvas Page</a>
+  <br /><a href="input.html">Input Page</a>
+  <br /><a href="final.html">Final Page</a>
 
-    <head>
-        <link rel="icon" type="image/png" href="Assets/BoochiSmol.png">
-        <meta charset="utf-8">
-        <link rel="icon" type="image/png" href="Assets/BoochiSmol.png">
-        <title>My Input Webpage</title>
-        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap">
-    </head>
+  <head>
+    <link rel="icon" type="image/png" href="Assets/BoochiSmol.png" />
+    <meta charset="utf-8" />
+    <link rel="icon" type="image/png" href="Assets/BoochiSmol.png" />
+    <title>My Input Webpage</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,500&display=swap"
+    />
+  </head>
 
-    <hr>
+  <hr />
 
-    <body>
-        <form align=center 
-        style="font-family: 'Poppins', sans-serif;
-        color:#FC766AFF; background-color: #5B84B1FF;
+  <body>
+    <form
+      align="center"
+      style="
+        font-family: 'Poppins', sans-serif;
+        color: #fc766aff;
+        background-color: #5b84b1ff;
         border-radius: 5px;
         align-items: center;
         justify-content: center;
-        text-align: center;"
-        onsubmit="showAlert(event)">
+        text-align: center;
+      "
+      onsubmit="showAlert(event)"
+    >
+      <legend>Welcome to my Webpage</legend>
+      <fieldset>
+        <label>Username: </label>
+        <input />
 
-        <legend>Welcome to my Webpage</legend>
-        <fieldset>
-            <label>Username: </label>
-            <input />
+        <br /><label>Password: </label>
+        <input type="password" />
 
-            <br><label>Password: </label>
-            <input type="password">
+        <br /><button>Sign Up</button> <br /><button>Log In</button>
+      </fieldset>
 
-            <br><button>Sign Up</button>
-            <br><button>Log In</button>
-        </fieldset>
+      <legend>Choose An Character</legend>
+      <fieldset>
+        <label>
+          Rose
+          <input type="radio" name="Name" value="Rose" />
+        </label>
 
-        <legend>Choose An Character</legend>
-        <fieldset>
-            <label> Rose
-                <input type="radio" name="Name" value="Rose">
-            </label>
+        <label>
+          Red
+          <input type="radio" name="Name" value="Red" />
+        </label>
 
-            <label> Red
-                <input type="radio" name="Name" value="Red">
-            </label>
+        <label>
+          Zero
+          <input type="radio" name="Name" value="Zero" />
+        </label>
+      </fieldset>
 
-            <label> Zero
-                <input type="radio" name="Name" value="Zero">
-            </label>
-        </fieldset>
+      <legend>Choose a Language</legend>
+      <fieldset>
+        <ul type="none">
+          <li>
+            <input type="checkbox" name="language" value="English" />English
+          </li>
+          <li>
+            <input type="checkbox" name="language" value="Japanese" />Japanese
+          </li>
+          <li>
+            <input type="checkbox" name="language" value="Spanish" />Spanish
+          </li>
+          <li>
+            <input type="checkbox" name="language" value="German" />German
+          </li>
+        </ul>
+      </fieldset>
 
-        <legend>Choose a Language</legend>
-        <fieldset>
-            <ul type="none">
-                <li><input type="checkbox" name="language" value="English">English</li>
-                <li><input type="checkbox" name="language" value="Japanese">Japanese</li>
-                <li><input type="checkbox" name="language" value="Spanish">Spanish</li>
-                <li><input type="checkbox" name="language" value="German">German</li>
-            </ul>
-        </fieldset>
+      <button type="submit">Submit</button>
+    </form>
 
-        <button type="submit">Submit</button>
-        </form>
-
-        <script>
-            function showAlert(event) {
-                event.preventDefault();
-                alert("Oh no I did something(You don't know what)");
-            }
-        </script>
-
-    </body>
-
+    <script>
+      function showAlert(event) {
+        event.preventDefault();
+        alert("Oh no I did something(You don't know what)");
+      }
+    </script>
+  </body>
 </html>
