@@ -12,6 +12,11 @@
     <title>My Fourth Webpage</title>
     <meta charset="UTF-8" />
     <style>
+      body {
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+      }
+
       a:link {
         color: orange;
       }
@@ -32,7 +37,11 @@
 
   <h1>Creating a Download Link</h1>
   <body
-    style="background-image: url(Assets/Fieren_smug.jpg); color: lightskyblue"
+    style="
+      background-image: url(Assets/Fieren_smug.jpg);
+      color: lightskyblue;
+      background-size: 100vw 100vh;
+    "
   >
     <a href="Assets/Test Homework File.csv">Download Homework File CSV</a>
     <svg>
