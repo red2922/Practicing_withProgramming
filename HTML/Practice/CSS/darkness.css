@@ -13,8 +13,8 @@ ul {
   width: 5%;
   gap: 35px;
   align-items: center;
-  justify-content: center;
   padding: 10px 0 10px 0;
+  height: 100vh;
 }
 
 li {
