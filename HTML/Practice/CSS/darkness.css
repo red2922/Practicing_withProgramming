@@ -61,3 +61,16 @@ li:hover {
   position: sticky;
   top: 0;
 }
+
+.ham.active:hover {
+  position: absolute;
+  animation: spin 0.5s 1;
+  animation-fill-mode: forwards;
+  animation-direction: alternate;
+}
+
+@keyframes spin {
+  100% {
+    transform: rotate(180deg);
+  }
+}
