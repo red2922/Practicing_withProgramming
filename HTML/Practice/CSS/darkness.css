@@ -34,3 +34,30 @@ li:hover {
   background-color: rgba(240, 248, 255, 0.5);
   position: sticky;
 }
+
+.nav-bar {
+  visibility: visible;
+  position: sticky;
+  display: inline-block;
+  bottom: 0;
+}
+
+.nav-bar.active {
+  visibility: hidden;
+}
+
+.ham {
+  visibility: hidden;
+  display: none;
+}
+
+.ham.active {
+  width: 4%;
+  padding-left: 5px;
+  visibility: visible;
+  display: inline;
+  background-color: rgb(102, 102, 102);
+  border-radius: 100px;
+  position: sticky;
+  top: 0;
+}
