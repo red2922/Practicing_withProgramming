@@ -36,3 +36,20 @@ def geekforgeeksolutionFib(n):
         temp_fib = fibonacci(n - 1) + fibonacci(n - 2)
         fibArray.append(temp_fib)
         return temp_fib
+
+
+def pascalsRecur(n):
+    if n == 0:
+        return 1
+    return  n *  pascalsRecur(n - 1)
+
+def test(n,k):
+    if k == 1: 
+        return 1
+    return test(n, k - 1) * n
+
+def idk(n,k, count = 0):
+    if n == 1:
+        return count + 1
+    else:
+        return idk(n - 1, k -1, count) * idk(n - 1, k, count)
