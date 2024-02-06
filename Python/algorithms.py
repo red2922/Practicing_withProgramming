@@ -49,7 +49,7 @@ def test(n,k):
     return test(n, k - 1) * n
 
 def idk(n,k, count = 0):
-    if n == 1:
+    if n == 1 or n == k or k == 0:
         return count + 1
     else:
         return idk(n - 1, k -1, count) * idk(n - 1, k, count)
