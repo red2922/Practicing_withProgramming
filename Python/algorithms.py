@@ -48,8 +48,8 @@ def test(n,k):
         return 1
     return test(n, k - 1) * n
 
-def idk(n,k, count = 0):
-    if n == 1 or n == k or k == 0:
-        return count + 1
+def idk(n,k):
+    if n == k or k == 0:
+        return 1
     else:
-        return idk(n - 1, k -1, count) * idk(n - 1, k, count)
+        return idk(n - 1, k -1) + idk(n - 1, k)
