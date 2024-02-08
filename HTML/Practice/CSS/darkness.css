@@ -12,7 +12,7 @@ ul {
   display: flex;
   margin: 0;
   flex-direction: column;
-  width: 5%;
+  width: min-content;
   gap: 25px;
   align-items: center;
   padding: 10px 0 10px 0;
@@ -68,6 +68,12 @@ li:hover {
   animation: spin 0.5s 1;
   animation-fill-mode: forwards;
   animation-direction: alternate;
+}
+
+#maincontent {
+  display: grid;
+  grid-template-columns: repeat(10,10%);
+  grid-template-rows: repeat(10,10%);
 }
 
 @keyframes spin {
