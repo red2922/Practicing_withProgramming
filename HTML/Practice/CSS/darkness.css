@@ -53,8 +53,8 @@ li:hover {
 }
 
 .ham.active {
-  width: 20%;
-  padding-left: 5px;
+  height: min-content;
+  width: 50%;
   visibility: visible;
   display: inline;
   background-color: rgb(102, 102, 102);
@@ -64,8 +64,6 @@ li:hover {
 }
 
 .ham.active:hover {
-  width: 20%;
-  position: absolute;
   animation: spin 0.5s 1;
   animation-fill-mode: forwards;
   animation-direction: alternate;
@@ -73,8 +71,8 @@ li:hover {
 
 #maincontent {
   display: grid;
-  grid-template-columns: repeat(10,10%);
-  grid-template-rows: repeat(10,10%);
+  grid-template-columns: repeat(10, 10%);
+  grid-template-rows: repeat(10, 10%);
 }
 
 @keyframes spin {
