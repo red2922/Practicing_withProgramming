@@ -38,9 +38,9 @@ li:hover {
 
 .nav-bar {
   visibility: visible;
-  position: sticky;
   display: inline-block;
-  bottom: 0;
+  position: fixed;
+  top: 0;
 }
 
 .nav-bar.active {
@@ -73,13 +73,24 @@ li:hover {
   display: grid;
   grid-template-columns: repeat(10, 10%);
   grid-template-rows: repeat(10, 10%);
+  height: 100vh;
 }
 
 #block-one {
   display: flex;
   grid-area: 2 / 2 / 4 / 10;
-  background-color: purple;
+  background-color: rgb(36, 36, 36);
   border-radius: 10px;
+  justify-content: space-evenly;
+}
+
+#block-one * {
+  display: flex;
+  background-color: rgb(72, 63, 80);
+  border-radius: 10px;
+  align-self: center;
+  width: 20%;
+  height: 10vh;
 }
 
 @keyframes spin {
