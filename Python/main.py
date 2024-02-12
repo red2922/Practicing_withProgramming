@@ -4,11 +4,19 @@ from algorithms import geekforgeeksolutionFib as gf
 from algorithms import pascalsRecur as pr
 from algorithms import test
 from algorithms import idk
+from algorithms import printData as testing
 
 """n = int(input("Please enter a number to calculate the fibonacci: "))
 print(fib(n))
 print(gf(n))"""
 
-print(pr(7))
 
-print(idk(5,3))
+test_data = {"Highschool":[0,0,.5,9,18,2],
+             "Middleschool":[0,0,.5,9,18,2],
+             "ValleyHigh":[.5,.5,0,9,17,2],
+             "Naples":[9,9,9,0,26,11],
+             "MountHall":[18,18,17,26,0,17],
+             "DistinctOffice":[2,2,2,11,17]}
+
+testing(test_data)
+

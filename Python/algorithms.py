@@ -53,3 +53,8 @@ def idk(n,k):
         return 1
     else:
         return idk(n - 1, k -1) + idk(n - 1, k)
+
+
+def printData(a):
+    for i in a.keys():
+        print(i)
