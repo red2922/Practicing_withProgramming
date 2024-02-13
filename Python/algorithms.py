@@ -56,5 +56,9 @@ def idk(n,k):
 
 
 def printData(a):
-    for i in a.keys():
-        print(i)
+    for key,value in a.items():
+        print(key, end=" ")
+        print(key, end=" ")
+        print(" " * 10, end="")
+        print(value)
+

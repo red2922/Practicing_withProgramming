@@ -20,3 +20,8 @@ test_data = {"Highschool":[0,0,.5,9,18,2],
 
 testing(test_data)
 
+d_aray = [[10,20,30,40],[10,25,30,40]]
+
+for i in range(len(d_aray)):
+    for n in range(len(d_aray[i])):
+        print(str(d_aray[i][n]) + (5 * " "), end="")
