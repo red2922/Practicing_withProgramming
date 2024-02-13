@@ -75,7 +75,7 @@ def printData(a):
         print(key, end=" ")
         print(" " * spaces, end="")
         for n in range(len(value)):
-            print(value[n], end=" ")
+            print(value[n], end=" " * (largest - 3))
         print("")
 
 #2 parts. 1st get all permutations. Then sort lexicographically
