@@ -75,7 +75,12 @@ def printData(a):
         print(key, end=" ")
         print(" " * spaces, end="")
         for n in range(len(value)):
-            print(value[n], end=" " * (largest - 3))
+
+            if type(value[n]) == float or value[n] >= 10:
+                print(value[n], end=" " * (largest - 4))
+            else:
+                print(value[n], end=" " * (largest - 3))
+
         print("")
 
 #2 parts. 1st get all permutations. Then sort lexicographically
