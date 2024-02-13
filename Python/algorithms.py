@@ -56,9 +56,18 @@ def idk(n,k):
 
 
 def printData(a):
+    local = []
+    for x in a.keys():
+        local.append(len(x))
+
+    largest = max(local) + 5
+
     for key,value in a.items():
+        smalls = len(key)
+        spaces = largest - smalls
         print(key, end=" ")
-        print(key, end=" ")
-        print(" " * 10, end="")
-        print(value)
+        print("  " * spaces, end="")
+        for n in range(len(value)):
+            print(value[n], end=" ")
+        print("")
 
