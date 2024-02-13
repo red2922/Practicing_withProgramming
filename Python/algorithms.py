@@ -60,14 +60,17 @@ def printData(a):
     for x in a.keys():
         local.append(len(x))
 
-    largest = max(local) + 5
+    largest = max(local)
 
     for key,value in a.items():
         smalls = len(key)
-        spaces = largest - smalls
+        spaces = largest - smalls + 5
         print(key, end=" ")
-        print("  " * spaces, end="")
+        print(" " * spaces, end="")
         for n in range(len(value)):
             print(value[n], end=" ")
         print("")
 
+#2 parts. 1st get all permutations. Then sort lexicographically
+def lexicoPermutations(n):
+    permu = []

@@ -16,7 +16,7 @@ test_data = {"Highschool":[0,0,.5,9,18,2],
              "ValleyHigh":[.5,.5,0,9,17,2],
              "Naples":[9,9,9,0,26,11],
              "MountHall":[18,18,17,26,0,17],
-             "DistinctOffice":[2,2,2,11,17]}
+             "DistinctOffice":[2,2,2,11,17,0]}
 
 testing(test_data)
 
