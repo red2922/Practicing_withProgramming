@@ -73,4 +73,15 @@ def printData(a):
 
 #2 parts. 1st get all permutations. Then sort lexicographically
 def lexicoPermutations(n):
-    permu = []
+    og = []
+    new = []
+    permutate = [[]]
+    i = 1
+    while i <= n:
+        og.append(i)
+        i += 1
+
+
+
+
+

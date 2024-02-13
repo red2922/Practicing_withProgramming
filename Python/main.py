@@ -5,6 +5,7 @@ from algorithms import pascalsRecur as pr
 from algorithms import test
 from algorithms import idk
 from algorithms import printData as testing
+from algorithms import lexicoPermutations as lp
 
 """n = int(input("Please enter a number to calculate the fibonacci: "))
 print(fib(n))
@@ -19,6 +20,7 @@ test_data = {"Highschool":[0,0,.5,9,18,2],
              "DistinctOffice":[2,2,2,11,17,0]}
 
 testing(test_data)
+print(lp(3))
 
 """
 d_aray = [[10,20,30,40],[10,25,30,40]]
