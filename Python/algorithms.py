@@ -57,11 +57,18 @@ def idk(n,k):
 
 def printData(a):
     local = []
+    key = []
     for x in a.keys():
         local.append(len(x))
+        key.append(x)
 
     largest = max(local)
+    print(" " * largest, end="")
 
+    for k in key:
+        print(k, end="   ")
+
+    print(" ")
     for key,value in a.items():
         smalls = len(key)
         spaces = largest - smalls + 5
@@ -87,7 +94,7 @@ def lexicoPermutations(n):
                 new.append(perm[:index] + [num] + perm[index:])
         permutate = new
 
-    return permutate
+    return sorted(permutate)
 
 
 

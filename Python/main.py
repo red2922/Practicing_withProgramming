@@ -20,6 +20,7 @@ test_data = {"Highschool":[0,0,.5,9,18,2],
              "DistinctOffice":[2,2,2,11,17,0]}
 
 testing(test_data)
+print(lp(4))
 
 """
 d_aray = [[10,20,30,40],[10,25,30,40]]
