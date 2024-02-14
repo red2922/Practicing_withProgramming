@@ -21,11 +21,11 @@ def printData(a):
         for n in range(len(value)):
 
             if type(value[n]) == float or value[n] >= 10:
-                print(value[n], end=" " * (largest - 4))
+                print(value[n], end=" " * (largest - 3))
             elif value[n] > 99:
                 print(value[n], end=" " * (largest))
             else:
-                print(value[n], end=" " * (largest - 3))
+                print(value[n], end=" " * (largest - 2))
 
         print("")
 
@@ -75,6 +75,7 @@ cities = int(input("Please enter the number of cities you want to represent: "))
 
 for number in range(cities):
     graph = []
+
     name = input("Please enter the name of the city: ")
     n_index.append(name)
 
@@ -99,6 +100,7 @@ for number in range(cities):
 
 #Override different array spots with zero if you place any zero between node. Ex you place zero for a spot
 #Then you place try to place 5 in the adjacent spot. The 5 will be overridden and turned to a zero.
+print(stack)
 
 for zero in stack:
     curr = stack.pop()

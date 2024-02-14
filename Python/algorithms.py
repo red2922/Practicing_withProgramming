@@ -113,5 +113,9 @@ def lexicoPermutations(n):
 
 
 
+for i in range(cities):
+
+
+
 
 
