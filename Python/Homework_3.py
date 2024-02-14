@@ -1,3 +1,27 @@
+def inputValidator(cities):
+    local_data = {}
+    local_array = []
+
+    for i in range(cities):
+        name = input("Please enter your city name: ")
+        local_array.append(name)
+
+    for c in local_array:
+        values = []
+
+        for x in range(len(local_array)):
+            if c != local_array[x]:
+                value = int(input(f"Please enter an value for {c} to {local_array[x]}: "))
+                values.append(value)
+            else:
+                continue
+
+        values.insert(local_array.index(c),0)
+        local_data[c] = values
+
+    return local_data
+
+
 #Just handels printing data
 def printData(a):
     local = []
@@ -67,46 +91,10 @@ for z in all:
     print(z)
 
 #Question 2
-data = {}
-n_index = []
-stack = []
 
 cities = int(input("Please enter the number of cities you want to represent: "))
 
-for number in range(cities):
-    graph = []
-
-    name = input("Please enter the name of the city: ")
-    n_index.append(name)
-
-    print("\nYou will now be adding the values to different cities. You do not need to add the value connecting to your own city.")
-    print("If you add any zeros, the first written zeros will be assumed to be the correct weight")
-    print("Any attempt to add a weight other than zero will lead it to be overridden with a zero\n")
-
-    # A majority of the code below is created for error handeling
-
-    for n in range(cities - 1):
-        value = int(input("Please enter the values to connecting cities: "))
-        if value == 0:
-            if n == 0:
-                stack.append((name, 1))
-            else:
-                stack.append((name,n))
-        graph.append(value)
-
-    graph.insert(number, 0)
-    data[name] = graph
-
-
-#Override different array spots with zero if you place any zero between node. Ex you place zero for a spot
-#Then you place try to place 5 in the adjacent spot. The 5 will be overridden and turned to a zero.
-print(stack)
-
-for zero in stack:
-    curr = stack.pop()
-    p = n_index.index(curr[0])
-    c = n_index[curr[1]]
-    data[c][p] = 0
+data = inputValidator(cities)
 
 printData(data)
 

@@ -112,8 +112,31 @@ def lexicoPermutations(n):
     return permutate
 
 
+#Hehehe death
 
-for i in range(cities):
+def inputValidator(cities):
+    local_data = {}
+    local_array = []
+
+    for i in range(cities):
+        name = input("Please enter your city name: ")
+        local_array.append(name)
+
+    for c in local_array:
+        values = []
+
+        for x in range(len(local_array)):
+            if c != local_array[x]:
+                value = int(input(f"Please enter an value for {c} to {local_array[x]}: "))
+                values.append(value)
+            else:
+                continue
+
+        values.insert(local_array.index(c),0)
+        local_data[c] = values
+
+    return local_data
+
 
 
 
