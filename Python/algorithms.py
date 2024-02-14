@@ -63,7 +63,7 @@ def printData(a):
         key.append(x)
 
     largest = max(local)
-    print(" " * largest, end="")
+    print(" " * (largest + 2), end="")
 
     for k in key:
         print(k, end="   ")
@@ -78,6 +78,8 @@ def printData(a):
 
             if type(value[n]) == float or value[n] >= 10:
                 print(value[n], end=" " * (largest - 4))
+            elif value[n] > 99:
+                print(value[n], end=" " * (largest))
             else:
                 print(value[n], end=" " * (largest - 3))
 
@@ -94,12 +96,21 @@ def lexicoPermutations(n):
 
     for num in og:
         new = []
-        for perm in permutate:
-            for index in range(len(perm) + 1):
-                new.append(perm[:index] + [num] + perm[index:])
+        for p in permutate:
+            for index in range(len(p) + 1):
+                new.append(p[:index] + [num] + p[index:])
         permutate = new
 
-    return sorted(permutate)
+    for array in range(len(permutate)):
+        minimum = array
+        for j in range(minimum + 1, len(permutate)):
+            if permutate[minimum] > permutate[j]:
+                minimum = j
+
+        permutate[array], permutate[minimum] = permutate[minimum], permutate[array]
+
+    return permutate
+
 
 
 
