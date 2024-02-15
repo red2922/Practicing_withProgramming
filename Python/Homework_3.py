@@ -4,29 +4,38 @@ def inputValidator(cities):
     starting = 1
     index = 0
 
+
     for i in range(cities):
         name = input("Please enter your city name: ")
         local_array.append(name)
         local_data[name] = []
 
+
+
     for num in range(cities):
         n = starting
+        count = 0
 
         if n > 1:
-            while index != num:
-                local_data[local_array[num]].append(local_data[local_array[num - 1]][index])
-                index += 1
+            while count != num:
+                p = 1
+                local_data[local_array[num]].append(local_data[local_array[num - p]][index])
+                p += 1
+                count += 1
+        print(index)
 
         while n != cities:
             value = int(input(f"Please enter the value from {local_array[num]} to {local_array[n]}: "))
             local_data[local_array[num]].append(value)
             n += 1
 
+        if num < cities - 1:
+            index += 1
+
         starting += 1
-        index = 0
 
     for city in range(len(local_array)):
-        local_data[local_array[city]].insert(city,0)
+        local_data[local_array[city]].insert(city, 0)
 
 
     return local_data
