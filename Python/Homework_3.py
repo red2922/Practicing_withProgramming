@@ -16,11 +16,12 @@ def inputValidator(cities):
 
         if n > 1:
             while count != num:
+                index = 0
                 p = 1
                 local_data[local_array[num]].append(local_data[local_array[num - p]][index])
                 p += 1
                 count += 1
-        print(index)
+                index += 1
 
         while n != cities:
             value = int(input(f"Please enter the value from {local_array[num]} to {local_array[n]}: "))
