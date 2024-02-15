@@ -10,8 +10,6 @@ def inputValidator(cities):
         local_array.append(name)
         local_data[name] = []
 
-
-
     for num in range(cities):
         n = starting
         count = 0
@@ -28,9 +26,6 @@ def inputValidator(cities):
             value = int(input(f"Please enter the value from {local_array[num]} to {local_array[n]}: "))
             local_data[local_array[num]].append(value)
             n += 1
-
-        if num < cities - 1:
-            index += 1
 
         starting += 1
 
@@ -50,6 +45,10 @@ def printData(a):
         key.append(x)
 
     largest = max(local)
+    if largest == 1:
+        largest = 5
+
+
     print(" " * (largest + 2), end="")
 
     for k in key:
@@ -58,7 +57,7 @@ def printData(a):
     print(" ")
     for key,value in a.items():
         smalls = len(key)
-        spaces = largest - smalls + 5
+        spaces = largest - smalls
         print(key, end=" ")
         print(" " * spaces, end="")
         for n in range(len(value)):
