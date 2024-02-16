@@ -1,38 +1,30 @@
 def inputValidator(cities):
     local_data = {}
     local_array = []
-    starting = 1
-    index = 0
-
+    values = []
+    starting_value = cities - 1
+    start = 1
 
     for i in range(cities):
         name = input("Please enter your city name: ")
         local_array.append(name)
-        local_data[name] = []
+        values.append([])
 
-    for num in range(cities):
-        n = starting
-        count = 0
+    for num in range(len(local_array)):
+        pointer = 0
+        while pointer < num:
+            values[num].append(values[pointer][num])
+            pointer += 1
 
-        if n > 1:
-            while count != num:
-                index = 0
-                p = 1
-                local_data[local_array[num]].append(local_data[local_array[num - p]][index])
-                p += 1
-                count += 1
-                index += 1
 
-        while n != cities:
-            value = int(input(f"Please enter the value from {local_array[num]} to {local_array[n]}: "))
-            local_data[local_array[num]].append(value)
-            n += 1
+        for c in range(starting_value):
+            toCity = int(input(f"Please enter an value to connect {local_array[num]} to {local_array[c + start]}: "))
+            values[num].append(toCity)
 
-        starting += 1
-
-    for city in range(len(local_array)):
-        local_data[local_array[city]].insert(city, 0)
-
+        starting_value -= 1
+        start += 1
+        values[num].insert(num,0)
+        local_data[local_array[num]] = values[num]
 
     return local_data
 
