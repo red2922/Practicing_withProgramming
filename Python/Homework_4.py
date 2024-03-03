@@ -12,12 +12,22 @@ women = {"a": ["z", "x", "y", "u", "v", "w"], "b": ["y", "z", "w", "x", "v", "u"
 
 # Question 1
 # Lets return a list of sets to show the pairs
-def gale_shap(one, two):
+def gale_shap(re, propose):
     matches = []
+    #Proposer will approach their reciever index[0]. If proposer == receiver[0] (highest) append to matches and remove key from all others.
+    # else go to next proposer.
+    while len(matches) != len(men):
+
+        for p in propose:
+            if p == re[propose[p][0]][0]:
+                matches.append((p, re[propose[p][0]][0]))
+                for r in re:
+                    re[r].remove(re[propose[p][0]][0])
 
 
-
+    return matches
 
 
 # Question 2
-gale_shap(men, women)
+print(gale_shap(men, women))
+print(gale_shap(women, men))
