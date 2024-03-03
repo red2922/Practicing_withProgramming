@@ -15,25 +15,22 @@ women = {"a": ["z", "x", "y", "u", "v", "w"], "b": ["y", "z", "w", "x", "v", "u"
 def gale_shap(re, propose):
     matches = []
     initial = len(propose)
-    step = 0
+
     #Proposer will approach their reciever index[0]. If proposer == receiver[0] (highest) append to matches and remove key from all others.
     # else go to next proposer.
 
     while len(matches) != initial:
 
-
         for p in propose:
             if p == re[propose[p][0]][0]:
                 matches.append((p, propose[p][0]))
-                #removed = propose[p][0]
-                print(matches)
+                removed = propose[p][0]
                 for r in re:
                     re[r].remove(p)
 
-               # for i in propose:
-                    #print(i)
-                   # print(propose[i])
-                   # propose[i].remove(removed)
+                for i in propose:
+                    if removed in propose[i]:
+                        propose[i].remove(removed)
             else:
                 propose[p].pop(0)
 
