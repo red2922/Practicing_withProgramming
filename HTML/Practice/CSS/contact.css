@@ -81,3 +81,16 @@ body {
   height: 30%;
   width: 35vw;
 }
+
+footer {
+  position: absolute;
+  background-color: #f9f8ed;
+  height: 5vh;
+  width: 100vw;
+  bottom: -86vh;
+  border-top: #5484b5 solid 2pt;
+}
+
+a {
+  text-decoration: none;
+}
