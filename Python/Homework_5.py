@@ -30,18 +30,17 @@ def dfs(g ,v, stack):
 
     for i in current.v:
         if i.disc == -1:
-            stack.append(i,current.u)
+            stack.append([i,current.u])
             g.graph[i - 1].parent = i
 
-            return dfs(g,v, stack)
-            
+            dfs(g,v, stack)
 
-
-
-
-
-
-
+            current.low = min(current.low, i.low)
+            if current.low >= i.disc:
+                popped = None
+                while popped != [i,current.u]:
+                    bioconnected.append(stack.pop())
+                
 
 new = Graph(8)
 edges = [[1,2],[2,3],[3,4],[4,1],[2,4],[3,5],[5,6],[5,7],[5,8]]
@@ -55,6 +54,7 @@ for i in edges:
     print(i.v)"""
 
 stack = []
+bioconnected = []
 time = 0
 
 
