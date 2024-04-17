@@ -1,0 +1,19 @@
+import random
+
+
+class Node:
+    def __init__(self, town):
+        self.town = town
+        self.connections = []
+
+    class Ant:
+        def __init__(self, home):
+            self.tabu = []
+            self.home = home
+
+        def add_town(self, town):
+            self.tabu.append(town)
+
+
+def probalility(smelly, view, total):
+    return (smelly * view) / total
