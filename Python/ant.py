@@ -15,5 +15,8 @@ class Node:
             self.tabu.append(town)
 
 
-def probalility(smelly, view, total):
+def probability(smelly, view, total):
     return (smelly * view) / total
+
+
+
