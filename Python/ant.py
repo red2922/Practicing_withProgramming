@@ -1,7 +1,7 @@
 import random
 
 
-class Node:
+class Graph:
     def __init__(self, town):
         self.town = town
         self.connections = []
@@ -14,9 +14,10 @@ class Node:
         def add_town(self, town):
             self.tabu.append(town)
 
-
 def probability(smelly, view, total):
     return (smelly * view) / total
+
+
 
 
 
